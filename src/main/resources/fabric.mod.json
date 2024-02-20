@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "frequentwanderingtrader",
+	"version": "${version}",
+	"name": "FrequentWanderingTrader",
+	"description": "This mod makes the Trader spawn more often!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/frequentwanderingtrader/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"la1m1e.wanderingtrader.FrequentWanderingTrader"
+		],
+
+		"client": [
+			"la1m1e.wanderingtrader.FrequentWanderingTraderClient"
+		],
+		"server": [
+			"la1m1e.wanderingtrader.FrequentWanderingTraderServer"
+		],
+		"fabric-datagen": [
+			"la1m1e.wanderingtrader.FrequentWanderingTraderDataGenerator"
+		]
+	},
+	"mixins": [
+		"frequentwanderingtrader.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
