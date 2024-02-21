@@ -16,11 +16,11 @@ public class WanderingTraderManageMixin {
 
 	@Inject(method = "spawn", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/world/ServerWorld;getGameRules()Lnet/minecraft/world/GameRules;", ordinal = 1))
 	private void reduceSpawnCooldown(ServerWorld world, boolean spawnMonsters, boolean spawnAnimals, CallbackInfoReturnable<Integer> cir) {
-		spawnDelay = 100;
+		spawnDelay = 12000;
 	}
 
 	@Inject(method = "<init>", at = @At(value = "INVOKE", target  = "Lnet/minecraft/world/level/ServerWorldProperties;setWanderingTraderSpawnDelay(I)V"))
 	private void setSpawnDelay(ServerWorldProperties properties, CallbackInfo ci) {
-		spawnDelay = 100;
+		spawnDelay = 12000;
 	}
 }
