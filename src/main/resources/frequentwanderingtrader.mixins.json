@@ -3,7 +3,6 @@
   "package": "la1m1e.wanderingtrader.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "WanderingTraderManageMixin2",
     "WanderingTraderManageMixin"
   ],
   "injectors": {
